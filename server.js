@@ -4,6 +4,24 @@ const dbConfig = require("./app/config/db.config");
 
 const app = express();
 
+const port = 3000;
+const eurekaHelper = require('./eureka-helper');
+
+app.use(cors())
+// app.use(express.static(path.join(__dirname, 'dist')));
+
+
+
+//app.use(bodyParser.json()); 
+
+//app.use('/article', article);
+
+
+eurekaHelper.registerWithEureka('gateway-service', port);
+app.listen(port, function(){
+    console.log("Server running on localhost:" + port);
+});
+
 var corsOptions = {
   origin: "http://localhost:8081"
 };
@@ -35,7 +53,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to restaurant application." });
 });
 
 // routes
@@ -83,3 +101,4 @@ function initial() {
     }
   });
 }
+

@@ -1,5 +1,7 @@
 const { authJwt } = require("../middlewares");
 const controller = require("../controllers/user.controller");
+const express = require('express');
+const router = express.Router();
 
 module.exports = function(app) {
   app.use(function(req, res, next) {
@@ -25,4 +27,14 @@ module.exports = function(app) {
     [authJwt.verifyToken, authJwt.isAdmin],
     controller.adminBoard
   );
+  // delete user
+  router.delete('/deleteuser/:id', (req, res) => {
+    var id = req.params.id;
+    User.findByIdAndRemove(id).then((user) => {
+      res.send({user});
+    }).catch((e) => {
+    console.log(e);
+    });
+  });
 };
+

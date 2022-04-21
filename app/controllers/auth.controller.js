@@ -19,6 +19,7 @@ exports.signup = (req, res) => {
       return;
     }
 
+
     if (req.body.roles) {
       Role.find(
         {
