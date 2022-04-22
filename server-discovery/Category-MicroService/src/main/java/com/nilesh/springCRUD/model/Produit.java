@@ -1,12 +1,10 @@
-package io.server.descovery.server.discovery.entities;
+package com.nilesh.springCRUD.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-public class Produit {
-
-
+public class Produit implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idProd;

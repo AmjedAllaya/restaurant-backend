@@ -2,10 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb4a912b-8404-4254-9409-9f11901e8062" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/food-order-manager/src/main/java/entities/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/food-order-manager/src/main/java/models/OrderModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/food-order-manager/src/main/java/repositories/OrderRepositories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/food-order-manager/src/main/java/ressources/OrderRessources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Copie springCRUD/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Copie springCRUD/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Copie springCRUD/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/java/com/nilesh/springCRUD/SpringCrudApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/java/com/nilesh/springCRUD/controller/CategoryContoller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/java/com/nilesh/springCRUD/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/java/com/nilesh/springCRUD/model/Produit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/java/com/nilesh/springCRUD/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/java/com/nilesh/springCRUD/services/CategoryServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/resources/templates/createcategory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/resources/templates/editcategory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/main/resources/templates/listcategory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService-Category/src/test/java/com/nilesh/springCRUD/SpringCrudApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/src/main/java/io/order/manager/food/order/manager/DTO/OrderDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/src/main/java/io/order/manager/food/order/manager/FoodOrderManagerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/src/main/java/io/order/manager/food/order/manager/models/Food_Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/src/main/java/io/order/manager/food/order/manager/repositories/FoodOrderRepositories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/food-order-manager/src/test/java/io/order/manager/food/order/manager/FoodOrderManagerApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +46,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="284hIw9s05x7kJ6Ox6LHUhVVXQ5" />
   <component name="ProjectViewState">
@@ -24,7 +59,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Copie springCRUD" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-discovery" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -35,6 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1650481690490</updated>
       <workItem from="1650481692448" duration="79000" />
+      <workItem from="1650666885016" duration="3000" />
+      <workItem from="1650666907549" duration="136000" />
     </task>
     <servers />
   </component>
