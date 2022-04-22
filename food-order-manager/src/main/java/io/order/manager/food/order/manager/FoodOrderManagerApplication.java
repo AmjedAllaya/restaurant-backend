@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 public class FoodOrderManagerApplication {
 	@Bean
-	@LoadBalanced
 	public RestTemplate getRestTemplate(){
 		return new RestTemplate();
 	}
