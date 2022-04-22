@@ -1,19 +1,17 @@
-package io.order.manager.food.order.manager.DTO;
+package io.order.manager.food.order.manager.models;
 
 import java.io.Serializable;
-import java.util.List;
 
-public class OrderDTO implements Serializable {
+public class Food_Order implements Serializable {
     private int id;
     private String reference;
     private long totalPrice;
     private int quantity;
-    private List<Object> orders;
 
-    public OrderDTO() {
+    public Food_Order() {
     }
 
-    public OrderDTO(int id, String reference, long totalPrice, int quantity) {
+    public Food_Order(int id, String reference, long totalPrice, int quantity) {
         this.id = id;
         this.reference = reference;
         this.totalPrice = totalPrice;
@@ -50,5 +48,15 @@ public class OrderDTO implements Serializable {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "Food_Order{" +
+                "id=" + id +
+                ", reference='" + reference + '\'' +
+                ", totalPrice=" + totalPrice +
+                ", quantity=" + quantity +
+                '}';
     }
 }

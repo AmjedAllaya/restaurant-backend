@@ -10,10 +10,6 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 public class FoodOrderManagerApplication {
-	@Bean
-	public RestTemplate getRestTemplate(){
-		return new RestTemplate();
-	}
 	public static void main(String[] args) {
 		SpringApplication.run(FoodOrderManagerApplication.class, args);
 	}

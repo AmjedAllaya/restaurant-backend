@@ -1,4 +1,4 @@
-package io.order.manager.food.order.manager.entities;
+package io.server.descovery.server.discovery.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.*;
