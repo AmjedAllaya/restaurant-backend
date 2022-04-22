@@ -1,21 +1,13 @@
-package com.nilesh.springCRUD.model;
+package com.nilesh.springCRUD.models;
 
 import java.io.Serializable;
 import java.util.List;
 
-import javax.persistence.*;
+public class Category  implements Serializable {
 
-@Entity
-public class Category {
-	//private static final long serialVersionUID = 6711457437559348053L;
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nom;
 	private String description;
-
-	@OneToMany(mappedBy = "categorie")
 	private List<Produit> prods;
 
 	public Long getId() {

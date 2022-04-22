@@ -1,19 +1,14 @@
-package com.nilesh.springCRUD.model;
+package com.nilesh.springCRUD.models;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
-public class Produit implements Serializable {
+public class Produit implements Serializable{
 
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idProd;
     private String nomProd;
     private Double prixProd;
 
-    @ManyToOne()
     private Category categorie;
 
     public Long getIdProd() {

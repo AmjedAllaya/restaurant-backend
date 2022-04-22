@@ -1,6 +1,6 @@
 package com.nilesh.springCRUD.services;
 
-import com.nilesh.springCRUD.model.Category;
+import com.nilesh.springCRUD.models.Category;
 import com.nilesh.springCRUD.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
