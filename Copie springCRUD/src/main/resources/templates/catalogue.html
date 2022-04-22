@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>catlogue</h1>
+</head>
+<body>
+<table border="1" cellpadding="10">
+    <thead>
+    <tr>
+        <th>Produit</th>
+        <th>Categorie</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="catalogue : ${catalogue}">
+        <td th:text="${catalogue.nomProd}">Student Name</td>
+        <td th:text="${catalogue.categorie.nom}">Student Name</td>
+
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
