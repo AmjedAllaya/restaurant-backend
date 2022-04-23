@@ -1,4 +1,4 @@
-package io.server.descovery.server.discovery.entities;
+package com.nilesh.springCRUD.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

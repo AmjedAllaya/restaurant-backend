@@ -13,7 +13,8 @@ public class Produit implements Serializable {
 
     @ManyToOne()
     private Category categorie;
-
+    @ManyToOne
+    private Food_Order food_order;
     public Long getIdProd() {
         return idProd;
     }
@@ -46,6 +47,14 @@ public class Produit implements Serializable {
         this.categorie = categorie;
     }
 
+    public Food_Order getFood_order() {
+        return food_order;
+    }
+
+    public void setFood_order(Food_Order food_order) {
+        this.food_order = food_order;
+    }
+
     public Produit(Long idProd, String nomProd, Double prixProd) {
         this.idProd = idProd;
         this.nomProd = nomProd;
@@ -59,4 +68,5 @@ public class Produit implements Serializable {
 
     public Produit() {
     }
+
 }

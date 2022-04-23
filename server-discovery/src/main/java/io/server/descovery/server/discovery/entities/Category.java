@@ -1,9 +1,8 @@
 package io.server.descovery.server.discovery.entities;
 
-import java.io.Serializable;
-import java.util.List;
-
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Category {
@@ -16,7 +15,7 @@ public class Category {
 	private String description;
 
 	@OneToMany(mappedBy = "categorie")
-	private List<Produit> prods;
+	private List<Produit> prods = new ArrayList<>();
 
 	public Long getId() {
 		return id;
@@ -39,7 +38,14 @@ public class Category {
 		this.description = description;
 	}
 
-	/*public Category() {
+	public List<Produit> getProds() {
+		return prods;
+	}
+
+	public void setProds(List<Produit> prods) {
+		this.prods = prods;
+	}
+/*public Category() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

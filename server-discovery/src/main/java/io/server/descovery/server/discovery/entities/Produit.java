@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-public class Produit {
-
-
+public class Produit implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idProd;
@@ -15,7 +13,8 @@ public class Produit {
 
     @ManyToOne()
     private Category categorie;
-
+    @ManyToOne
+    private Food_Order food_order;
     public Long getIdProd() {
         return idProd;
     }
@@ -48,6 +47,14 @@ public class Produit {
         this.categorie = categorie;
     }
 
+    public Food_Order getFood_order() {
+        return food_order;
+    }
+
+    public void setFood_order(Food_Order food_order) {
+        this.food_order = food_order;
+    }
+
     public Produit(Long idProd, String nomProd, Double prixProd) {
         this.idProd = idProd;
         this.nomProd = nomProd;
@@ -61,4 +68,5 @@ public class Produit {
 
     public Produit() {
     }
+
 }
