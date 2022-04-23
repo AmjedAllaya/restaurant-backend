@@ -47,9 +47,9 @@ public class OrderRessources {
     public String deleteOrder(int id) {
         if (foodOrderRepositories.findById(id).isPresent()) {
             foodOrderRepositories.deleteById(id);
-            return "candidat supprimé";
+            return "order supprimé";
         } else {
-            return "candidat non supprimé";
+            return "order non supprimé";
         }
     }
 

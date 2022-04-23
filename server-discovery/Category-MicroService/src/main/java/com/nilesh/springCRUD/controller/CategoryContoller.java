@@ -2,53 +2,59 @@ package com.nilesh.springCRUD.controller;
 
 import com.nilesh.springCRUD.model.Category;
 //import com.nilesh.springCRUD.model.Student;
+import com.nilesh.springCRUD.repository.CategoryRepository;
 import com.nilesh.springCRUD.services.CategoryServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
 @Controller
+@CrossOrigin
+@RequestMapping(value = "/api/category")
 public class CategoryContoller {
     @Autowired
-    CategoryServices cservice;
+    CategoryRepository categoryRepository;
 
-    @RequestMapping("/")
-    public String viewHomePage(Model model) {
-        List<Category> ListCat = cservice.listAll();
-        model.addAttribute("ListCat",ListCat);
-        return "listcategory";
+    @GetMapping
+// Affiche Liste des category
+    public List<Category> allOffers() {
+        List<Category> allcategory =  categoryRepository.findAll();
+        return allcategory;
     }
-    @RequestMapping("/newcat")
-    public String newCat(Model model) {
-        Category cat=new Category();
-        model.addAttribute(cat);
-        return "createcategory";
-    }
-
-    @RequestMapping(value="/savecat", method= RequestMethod.POST)
-    public String saveCat(@ModelAttribute("cat") Category cat) {
-        cservice.save(cat);
-        return "redirect:/";
+    @PostMapping
+//    @ResponseStatus(HttpStatus.CREATED)
+    //Ajouter category:
+    public Category addcategory(Category category) {
+        return categoryRepository.save(category);
     }
 
-    @RequestMapping("editcat/{id}")
-    public ModelAndView showEditCategoryPage(@PathVariable (name="id") Long id) {
-        ModelAndView mav=new ModelAndView("editcategory");
-        Category cat=cservice.get(id);
-        mav.addObject("cat",cat);
-        return mav;
+    @PutMapping(value = "/{id}")
+    // Update category
+    public Category updateCategory(Long id, Category newCategory) {
+        if (categoryRepository.findById(id).isPresent()) {
+            Category existingcategory = categoryRepository.findById(id).get();
+            existingcategory.setNom(newCategory.getNom());
+            existingcategory.setDescription(newCategory.getDescription());
+            existingcategory.setProds(newCategory.getProds());
+            return categoryRepository.save(existingcategory);
+
+        } else
+            return null;
     }
 
-    @RequestMapping("deletecat/{id}")
-    public String deleteCategoriePage(@PathVariable (name="id") Long id) {
-        cservice.delete(id);
-        return "redirect:/";
+    @DeleteMapping(value = "/{id}")
+    // Delete category
+    public String deletecategory(Long id) {
+        if (categoryRepository.findById(id).isPresent()) {
+            categoryRepository.deleteById(id);
+            return "category supprimé";
+        } else {
+            return "category non supprimé";
+        }
     }
+
 }
