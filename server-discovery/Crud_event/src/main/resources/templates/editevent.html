@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Edit cat</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  navbar navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Projet microservices</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Produits</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/event">Evenements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Offres</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+    <div align="center">
+        <br />
+        <div class="card">
+            <div class="card-header">
+                Modifier evenement
+            </div>
+
+            <div class="card-body">
+
+                <form action="#" th:action="@{/savecat}" th:object="${event}"
+                      method="post">
+                    <div class="form-group">
+                        <label>ID evenement</label>
+                        <input type="text" th:field="*{id}" class="form-control" readonly="readonly">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nom evenement</label>
+                        <input type="text" th:field="*{nom}" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Description evenement</label>
+                        <input type="text" th:field="*{description}" class="form-control" >
+                    </div>
+                    <td colspan="2"><button  class="btn btn-primary" type="submit">Modifier </button> </td>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--
+<div align="center">
+    <h1>Modifier une Categorie</h1>
+    <br />
+    <form action="#" th:action="@{/savecat}" th:object="${cat}"
+          method="post">
+        <table border="0">
+            <tr>
+                <td>ID Categorie:</td>
+                <td><input type="text" th:field="*{id}" readonly="readonly" />
+                </td>
+            </tr>
+            <tr>
+                <td>Nom Categorie:</td>
+                <td><input type="text" th:field="*{nom}" /></td>
+            </tr>
+            <tr>
+                <td>Description Categorie:</td>
+                <td><input type="text" th:field="*{description}" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Modifier</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+-->
+</div>
+</body>
+</html>
