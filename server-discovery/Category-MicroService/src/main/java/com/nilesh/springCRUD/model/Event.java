@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package com.nilesh.springCRUD.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

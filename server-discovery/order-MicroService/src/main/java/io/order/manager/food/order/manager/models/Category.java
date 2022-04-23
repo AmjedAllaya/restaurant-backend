@@ -1,4 +1,4 @@
-package io.server.descovery.server.discovery.entities;
+package io.order.manager.food.order.manager.models;
 
 import javax.persistence.*;
 import java.util.ArrayList;

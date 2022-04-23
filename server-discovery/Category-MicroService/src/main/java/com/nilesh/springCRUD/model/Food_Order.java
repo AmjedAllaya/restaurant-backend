@@ -13,8 +13,19 @@ public class Food_Order implements Serializable {
     private String reference;
     private long totalPrice;
     private int quantity;
-    @OneToMany
-    private List<Produit> products = new ArrayList<>();
+
+    @OneToMany(mappedBy = "product")
+    private List<Product> products = new ArrayList<>();
+
+    @ManyToOne
+//    @JoinColumn(name = "category_id")
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+
     public Food_Order() {
     }
 
@@ -57,12 +68,16 @@ public class Food_Order implements Serializable {
         this.quantity = quantity;
     }
 
-    public List<Produit> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(List<Produit> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     @Override

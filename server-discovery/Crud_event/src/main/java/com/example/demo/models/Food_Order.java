@@ -1,4 +1,4 @@
-package io.server.descovery.server.discovery.entities;
+package com.example.demo.models;
 
 import javax.persistence.*;
 import java.io.Serializable;

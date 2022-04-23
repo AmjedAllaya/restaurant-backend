@@ -1,10 +1,9 @@
 package io.order.manager.food.order.manager.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Food_Order implements Serializable {
@@ -14,6 +13,18 @@ public class Food_Order implements Serializable {
     private String reference;
     private long totalPrice;
     private int quantity;
+
+    @OneToMany(mappedBy = "product")
+    private List<Product> products = new ArrayList<>();
+
+    @ManyToOne
+//    @JoinColumn(name = "category_id")
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
 
     public Food_Order() {
     }
@@ -55,6 +66,18 @@ public class Food_Order implements Serializable {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package io.order.manager.food.order.manager.models;
 
 import javax.persistence.*;
 import java.io.Serializable;

@@ -5,7 +5,6 @@ import io.order.manager.food.order.manager.repositories.FoodOrderRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.ws.rs.core.Response;
 import java.util.List;
 
 @RestController

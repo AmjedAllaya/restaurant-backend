@@ -1,10 +1,8 @@
 package com.nilesh.springCRUD.model;
 
-import java.io.Serializable;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.persistence.*;
 
 @Entity
 public class Category {
@@ -17,7 +15,7 @@ public class Category {
 	private String description;
 
 	@OneToMany(mappedBy = "categorie")
-	private List<Produit> prods = new ArrayList<>();
+	private List<Product> prods = new ArrayList<>();
 
 	public Long getId() {
 		return id;
@@ -40,13 +38,14 @@ public class Category {
 		this.description = description;
 	}
 
-	public List<Produit> getProds() {
+	public List<Product> getProds() {
 		return prods;
 	}
 
-	public void setProds(List<Produit> prods) {
+	public void setProds(List<Product> prods) {
 		this.prods = prods;
 	}
+
 /*public Category() {
 		super();
 		// TODO Auto-generated constructor stub

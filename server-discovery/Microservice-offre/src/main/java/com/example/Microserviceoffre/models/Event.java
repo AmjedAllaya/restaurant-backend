@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package com.example.Microserviceoffre.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
