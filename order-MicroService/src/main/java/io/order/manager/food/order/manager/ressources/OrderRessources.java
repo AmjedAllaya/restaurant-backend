@@ -1,7 +1,7 @@
 package io.order.manager.food.order.manager.ressources;
 
 import io.order.manager.food.order.manager.entities.Food_Order;
-import io.order.manager.food.order.manager.services.FoodService;
+import io.order.manager.food.order.manager.services.impl.FoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

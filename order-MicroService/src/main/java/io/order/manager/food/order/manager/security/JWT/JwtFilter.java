@@ -1,6 +1,7 @@
 package io.order.manager.food.order.manager.security.JWT;
 
 
+import io.order.manager.food.order.manager.dto.UserDTO;
 import io.order.manager.food.order.manager.entities.User;
 import io.order.manager.food.order.manager.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +32,7 @@ public class JwtFilter extends OncePerRequestFilter {
         if (jwt != null && jwtProvider.validate(jwt)) {
             try {
                 String userAccount = jwtProvider.getUserAccount(jwt);
-                User user = userService.findOne(userAccount);
+                UserDTO user = userService.findOne(userAccount);
                 // pwd not necessary
                 // if jwt ok, then authenticate
                 SimpleGrantedAuthority sga = new SimpleGrantedAuthority(user.getRole());

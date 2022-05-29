@@ -1,16 +1,17 @@
 package io.order.manager.food.order.manager.services;
 
 
+import io.order.manager.food.order.manager.dto.UserDTO;
 import io.order.manager.food.order.manager.entities.User;
 
 import java.util.Collection;
 
 public interface UserService {
-    User findOne(String email);
+    UserDTO findOne(String email);
 
-    Collection<User> findByRole(String role);
+    Collection<UserDTO> findByRole(String role);
 
-    User save(User user);
+    UserDTO save(UserDTO userDTO);
 
-    User update(User user);
+    void update(UserDTO userDTO);
 }

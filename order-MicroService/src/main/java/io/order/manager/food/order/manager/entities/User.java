@@ -30,11 +30,11 @@ public class User implements Serializable {
     @NotEmpty
     private String name;
     @NotEmpty
-    private String phone;
+    private String phone="29559775";
     @NotEmpty
-    private String address;
+    private String address="holaaa";
     @NotNull
-    private boolean active;
+    private boolean active = true;
     @NotEmpty
     private String role = "ROLE_CUSTOMER";
 

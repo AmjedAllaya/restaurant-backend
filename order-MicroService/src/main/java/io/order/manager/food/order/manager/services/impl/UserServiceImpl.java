@@ -2,8 +2,10 @@ package io.order.manager.food.order.manager.services.impl;
 
 
 import io.order.manager.food.order.manager.Exeptions.MyException;
+import io.order.manager.food.order.manager.dto.UserDTO;
 import io.order.manager.food.order.manager.entities.User;
 import io.order.manager.food.order.manager.enums.ResultEnum;
+import io.order.manager.food.order.manager.mappers.UserMapper;
 import io.order.manager.food.order.manager.repositories.UserRepository;
 import io.order.manager.food.order.manager.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @DependsOn("passwordEncoder")
@@ -21,27 +25,31 @@ public class UserServiceImpl implements UserService {
     UserRepository userRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Autowired
+    private UserMapper userMapper;
 
     @Override
-    public User findOne(String email) {
-        return userRepository.findByEmail(email);
+    public UserDTO findOne(String email) {
+        return userMapper.convertEntityToDto(userRepository.findByEmail(email));
     }
 
     @Override
-    public Collection<User> findByRole(String role) {
-        return userRepository.findAllByRole(role);
+    public Collection<UserDTO> findByRole(String role) {
+        Collection<User> users = userRepository.findAllByRole(role);
+        return users.stream().map(x-> userMapper.convertEntityToDto(x)).collect(Collectors.toList());
     }
 
     @Override
     @Transactional
-    public User save(User user) {
+    public UserDTO save(UserDTO userDTO) {
         //register
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        userDTO.setPassword(passwordEncoder.encode(userDTO.getPassword()));
         try {
-            User savedUser = userRepository.save(user);
+            User savedUser = userRepository.save(userMapper.convertDtoToEntity(userDTO));
 
             // initial Cart;
-            return userRepository.save(savedUser);
+            //return userRepository.save(savedUser);
+            return userMapper.convertEntityToDto(savedUser);
 
         } catch (Exception e) {
             throw new MyException(ResultEnum.VALID_ERROR);
@@ -51,13 +59,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public User update(User user) {
-        User oldUser = userRepository.findByEmail(user.getEmail());
-        oldUser.setPassword(passwordEncoder.encode(user.getPassword()));
-        oldUser.setName(user.getName());
-        oldUser.setPhone(user.getPhone());
-        oldUser.setAddress(user.getAddress());
-        return userRepository.save(oldUser);
+    public void update(UserDTO userDTO) {
+        UserDTO oldUser = userMapper.convertEntityToDto(userRepository.findByEmail(userDTO.getEmail()));
+        oldUser.setPassword(passwordEncoder.encode(userDTO.getPassword()));
+        oldUser.setName(userDTO.getName());
+        oldUser.setPhone(userDTO.getPhone());
+        oldUser.setAddress(userDTO.getAddress());
+        userRepository.save(userMapper.convertDtoToEntity(oldUser));
     }
 
 }

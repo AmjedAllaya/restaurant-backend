@@ -1,7 +1,7 @@
 package io.order.manager.food.order.manager.ressources;
 
 
-import io.order.manager.food.order.manager.entities.User;
+import io.order.manager.food.order.manager.dto.UserDTO;
 import io.order.manager.food.order.manager.security.JWT.JwtProvider;
 import io.order.manager.food.order.manager.services.UserService;
 import io.order.manager.food.order.manager.vo.request.LoginForm;
@@ -44,8 +44,8 @@ public class UserRessources {
             SecurityContextHolder.getContext().setAuthentication(authentication);
             String jwt = jwtProvider.generate(authentication);
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-            User user = userService.findOne(userDetails.getUsername());
-            return ResponseEntity.ok(new JwtResponse(jwt, user.getEmail(), user.getName(), user.getRole()));
+            UserDTO userDTO = userService.findOne(userDetails.getUsername());
+            return ResponseEntity.ok(new JwtResponse(jwt, userDTO.getEmail(), userDTO.getName(), userDTO.getRole()));
         } catch (AuthenticationException e) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
@@ -53,27 +53,30 @@ public class UserRessources {
 
 
     @PostMapping("/register")
-    public ResponseEntity<User> save(@RequestBody User user) {
+    public ResponseEntity<UserDTO> save(@RequestBody UserDTO userDTO) {
         try {
-            return ResponseEntity.ok(userService.save(user));
+            return ResponseEntity.ok(userService.save(userDTO));
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }
     }
 
     @PutMapping("/profile")
-    public ResponseEntity<User> update(@RequestBody User user, Principal principal) {
+    public ResponseEntity<String> update(@RequestBody UserDTO userDTO, Principal principal) {
 
         try {
-            if (!principal.getName().equals(user.getEmail())) throw new IllegalArgumentException();
-            return ResponseEntity.ok(userService.update(user));
+            if (!principal.getName().equals(userDTO.getEmail())){
+                throw new IllegalArgumentException();
+            }
+            userService.update(userDTO);
+            return ResponseEntity.ok("Updated Successfully");
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }
     }
 
     @GetMapping("/profile/{email}")
-    public ResponseEntity<User> getProfile(@PathVariable("email") String email, Principal principal) {
+    public ResponseEntity<UserDTO> getProfile(@PathVariable("email") String email, Principal principal) {
         if (principal.getName().equals(email)) {
             return ResponseEntity.ok(userService.findOne(email));
         } else {
