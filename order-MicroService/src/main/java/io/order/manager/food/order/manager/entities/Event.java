@@ -13,8 +13,9 @@ public class Event implements Serializable {
     private String name;
     private String description;
 
-    @OneToMany(mappedBy = "event")
-    private List<Offre> offreEventList = new ArrayList<>();
+/*    @OneToMany(mappedBy = "event")
+    private List<Offre> offreEventList = new ArrayList<>();*/
+
     public Event() {
     }
 
@@ -48,12 +49,12 @@ public class Event implements Serializable {
         this.description = description;
     }
 
-    public List<Offre> getOffreEventList() {
+    /*public List<Offre> getOffreEventList() {
         return offreEventList;
     }
 
     public void setOffreEventList(List<Offre> offreEventList) {
         this.offreEventList = offreEventList;
     }
-
+*/
 }

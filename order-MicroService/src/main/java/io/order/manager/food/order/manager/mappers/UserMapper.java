@@ -22,11 +22,11 @@ public class UserMapper {
         return userDTO;
     }
 
-    public User convertDtoToEntity(UserDTO userLocationDTO){
+    public User convertDtoToEntity(UserDTO userDTO){
         modelMapper.getConfiguration()
                 .setMatchingStrategy(MatchingStrategies.LOOSE);
         User user = new User();
-        user = modelMapper.map(userLocationDTO, User.class);
+        user = modelMapper.map(userDTO, User.class);
         return user;
     }
 }

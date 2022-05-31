@@ -14,8 +14,8 @@ public class Category {
 	private String nom;
 	private String description;
 
-	@OneToMany(mappedBy = "categorie")
-	private List<Product> prods = new ArrayList<>();
+	/*@OneToMany(mappedBy = "categorie")
+	private List<Product> prods = new ArrayList<>();*/
 
 	public Long getId() {
 		return id;
@@ -38,13 +38,13 @@ public class Category {
 		this.description = description;
 	}
 
-	public List<Product> getProds() {
+/*	public List<Product> getProds() {
 		return prods;
 	}
 
 	public void setProds(List<Product> prods) {
 		this.prods = prods;
-	}
+	}*/
 
 /*public Category() {
 		super();

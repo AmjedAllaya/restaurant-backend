@@ -2,7 +2,7 @@ package io.order.manager.food.order.manager.services;
 
 
 import io.order.manager.food.order.manager.dto.UserDTO;
-import io.order.manager.food.order.manager.entities.User;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 

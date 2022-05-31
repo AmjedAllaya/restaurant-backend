@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb4a912b-8404-4254-9409-9f11901e8062" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/CategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/repositories/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/CategoryRessources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/FoodOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/CategoryServicesImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.dockerignore" afterDir="false" />
@@ -33,164 +39,21 @@
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/eureka-helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/eureka-helper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/SpringCrudApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/controller/CategoryContoller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/model/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/model/Food_Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/model/Offre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/repository/CategoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/java/com/nilesh/springCRUD/services/CategoryServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/resources/templates/createcategory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/resources/templates/editcategory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/main/resources/templates/listcategory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Category-MicroService/src/test/java/com/nilesh/springCRUD/SpringCrudApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/Database.lock.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/Database.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/Database.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/dokerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/CrudEventApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/DTO/EventDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/models/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/models/Food_Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/models/Offre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/models/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/repositories/EventRepositories.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/java/com/example/demo/ressources/EventRessources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/css/nivo-slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/css/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/css/owl.theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/css/side.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/199px-Noodles_&amp;_Company_Logo_svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/American-Express.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/Maestro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/PayPal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/Visa-Electron.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/Visa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/author.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/category-image-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/category-image-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/category-image-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/comapny-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/company-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/company-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/company-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/company-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/company-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/company-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/company-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/company-9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/food-ad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/footer-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/header.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/kewledits.weebly (120).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/large_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/large_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/post-img-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/post-img-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/post-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-image-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-image-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-image-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-image-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-image-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-image-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-image-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-item-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/product-item.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/single-product.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/slider.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/slider1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/slider2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/titleBorder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/images/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/js/jquery.nicescroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/js/jquery.nivo.slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/js/jquery.scrollUp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/js/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/static/js/product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/templates/createEvent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/templates/editevent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/main/resources/templates/listevent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Crud_event/src/test/java/com/example/demo/CrudEventApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/DTO/OffreDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/MicroserviceOffreApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/models/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/models/Food_Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/models/Offre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/models/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/repositories/OffreRepositories.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/java/com/example/Microserviceoffre/ressources/OffreRessources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/Microservice-offre/src/test/java/com/example/Microserviceoffre/MicroserviceOffreApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/DTO/OrderDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/FoodOrderManagerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/models/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/models/Food_Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/models/Offre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/models/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/repositories/FoodOrderRepositories.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/order-MicroService/src/test/java/io/order/manager/food/order/manager/FoodOrderManagerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/src/main/java/com/example/dishes/product/ProductApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/src/main/java/com/example/dishes/product/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/src/main/java/com/example/dishes/product/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/src/main/java/com/example/dishes/product/repository/ProductRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/src/main/java/com/example/dishes/product/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/src/main/java/com/example/dishes/product/service/ProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-discovery/product-microservice/product/src/test/java/com/example/dishes/product/ProductApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/FoodOrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Food_Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Food_Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Offre.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Offre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/FoodOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/FoodOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/security/JWT/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/security/JWT/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/security/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/security/SpringSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/FoodOrderServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +76,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../projet/GestionCandidatMS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -233,6 +96,8 @@
       <workItem from="1650666907549" duration="136000" />
       <workItem from="1651915024869" duration="34000" />
       <workItem from="1652975102889" duration="638000" />
+      <workItem from="1654025663763" duration="782000" />
+      <workItem from="1654027048235" duration="608000" />
     </task>
     <servers />
   </component>

@@ -12,7 +12,7 @@ public class Product implements Serializable {
     private String description;
     private Long price;
 
-    @ManyToOne
+/*    @ManyToOne
 //    @JoinColumn(name = "product_id")
     private Product product;
 
@@ -26,17 +26,21 @@ public class Product implements Serializable {
 
     @ManyToOne
 //    @JoinColumn(name = "product_id")
-    private Product productOffre;
+    private Product productOffre;*/
+
+
     public Product() {
     }
 
-    public Product getProductOffre() {
+/*    public Product getProductOffre() {
         return productOffre;
-    }
+    }*/
 
+/*
     public void setProductOffre(Product productOffre) {
         this.productOffre = productOffre;
     }
+*/
 
     public Product(Long id, String name, String description, Long price) {
         this.id = id;
@@ -46,9 +50,9 @@ public class Product implements Serializable {
     }
 
 
-    public Product getProduct() {
+/*    public Product getProduct() {
         return product;
-    }
+    }*/
 
     public Long getId() {
         return id;
@@ -82,7 +86,7 @@ public class Product implements Serializable {
         this.price = price;
     }
 
-    public Category getCategorie() {
+/*    public Category getCategorie() {
         return categorie;
     }
 
@@ -100,5 +104,5 @@ public class Product implements Serializable {
 
     public void setProduct(Product product) {
         this.product = product;
-    }
+    }*/
 }

@@ -14,7 +14,7 @@ public class Offre implements Serializable {
     private long remise;
 
 
-    @OneToMany(mappedBy = "productOffre")
+/*    @OneToMany(mappedBy = "productOffre")
     private List<Product> products = new ArrayList<>();
 
     @ManyToOne
@@ -23,7 +23,7 @@ public class Offre implements Serializable {
 
     public Event getEvent() {
         return event;
-    }
+    }*/
 
     public Offre() {
     }
@@ -52,7 +52,7 @@ public class Offre implements Serializable {
         this.remise = remise;
     }
 
-    public List<Product> getProducts() {
+/*    public List<Product> getProducts() {
         return products;
     }
 
@@ -62,5 +62,5 @@ public class Offre implements Serializable {
 
     public void setEvent(Event event) {
         this.event = event;
-    }
+    }*/
 }

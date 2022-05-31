@@ -3,22 +3,11 @@ package io.order.manager.food.order.manager.dto;
 import java.io.Serializable;
 import java.util.List;
 
-public class OrderDTO implements Serializable {
+public class FoodOrderDTO implements Serializable {
     private int id;
     private String reference;
     private long totalPrice;
     private int quantity;
-    private List<Object> orders;
-
-    public OrderDTO() {
-    }
-
-    public OrderDTO(int id, String reference, long totalPrice, int quantity) {
-        this.id = id;
-        this.reference = reference;
-        this.totalPrice = totalPrice;
-        this.quantity = quantity;
-    }
 
     public int getId() {
         return id;

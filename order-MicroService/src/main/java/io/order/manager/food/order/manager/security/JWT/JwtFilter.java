@@ -51,11 +51,10 @@ public class JwtFilter extends OncePerRequestFilter {
 
     private String getToken(HttpServletRequest request) {
         String authHeader = request.getHeader("Authorization");
-
+        System.out.println("authHeader "+ authHeader);
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             return authHeader.replace("Bearer ", "");
         }
-
         return null;
     }
 }

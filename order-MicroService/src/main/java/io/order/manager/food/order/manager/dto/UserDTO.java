@@ -10,6 +10,8 @@ public class UserDTO implements Serializable {
     private String password;
     private String role = "ROLE_CUSTOMER";
 
+
+
     public String getEmail() {
         return email;
     }
