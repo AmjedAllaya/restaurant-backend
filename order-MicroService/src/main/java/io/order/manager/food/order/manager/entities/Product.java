@@ -1,5 +1,7 @@
 package io.order.manager.food.order.manager.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -19,14 +21,18 @@ public class Product implements Serializable {
     @ManyToOne
 //    @JoinColumn(name = "categorie_id")
     private Category categorie;
+        @ManyToOne
+//    @JoinColumn(name = "product_id")
+    private Product productOffre;
+    */
 
-    @ManyToOne
-//    @JoinColumn(name = "food_order_id")
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "food_order_id" ,referencedColumnName="id")
+
     private Food_Order food_order;
 
-    @ManyToOne
-//    @JoinColumn(name = "product_id")
-    private Product productOffre;*/
+
 
 
     public Product() {
@@ -86,7 +92,14 @@ public class Product implements Serializable {
         this.price = price;
     }
 
-/*    public Category getCategorie() {
+    public Food_Order getFood_order() {
+        return food_order;
+    }
+
+    public void setFood_order(Food_Order food_order) {
+        this.food_order = food_order;
+    }
+    /*    public Category getCategorie() {
         return categorie;
     }
 

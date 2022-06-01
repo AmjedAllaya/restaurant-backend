@@ -1,7 +1,6 @@
 package io.order.manager.food.order.manager.services;
 
 import io.order.manager.food.order.manager.dto.CategoryDTO;
-import io.order.manager.food.order.manager.dto.FoodOrderDTO;
 import io.order.manager.food.order.manager.entities.Category;
 
 import java.util.List;

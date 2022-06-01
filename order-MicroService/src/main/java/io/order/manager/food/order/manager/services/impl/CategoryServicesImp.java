@@ -3,7 +3,6 @@ package io.order.manager.food.order.manager.services.impl;
 
 import io.order.manager.food.order.manager.dto.CategoryDTO;
 import io.order.manager.food.order.manager.entities.Category;
-import io.order.manager.food.order.manager.entities.Food_Order;
 import io.order.manager.food.order.manager.mappers.CategoryMapper;
 import io.order.manager.food.order.manager.repositories.CategoryRepository;
 import io.order.manager.food.order.manager.services.CategoryService;
@@ -46,9 +45,9 @@ public class CategoryServicesImp implements CategoryService {
     public String delete(Long id) {
         if (categoryRepository.findById(id).isPresent()) {
             categoryRepository.deleteById(id);
-            return "order supprimé";
+            return "category supprimé";
         } else {
-            return "order non supprimé";
+            return "category non supprimé";
         }
     }
 }

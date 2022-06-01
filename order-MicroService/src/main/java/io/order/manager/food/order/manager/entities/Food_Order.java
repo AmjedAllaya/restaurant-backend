@@ -2,6 +2,7 @@ package io.order.manager.food.order.manager.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,27 +14,19 @@ public class Food_Order implements Serializable {
     private long totalPrice;
     private int quantity;
 
-/*    @OneToMany(mappedBy = "product")
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "food_order",cascade = CascadeType.ALL)
     private List<Product> products = new ArrayList<>();
 
-    @ManyToOne
-//    @JoinColumn(name = "category_id")
-    private Category category;
-
-    public Category getCategory() {
-        return category;
-    }*/
 
 
     public Food_Order() {
     }
 
-    public Food_Order(String reference, long totalPrice, int quantity, List<Product> products, Category category) {
+    public Food_Order(String reference, long totalPrice, int quantity, List<Product> products) {
         this.reference = reference;
         this.totalPrice = totalPrice;
         this.quantity = quantity;
-       /* this.products = products;
-        this.category = category;*/
+        this.products = products;
     }
 
     public Food_Order(int id, String reference, long totalPrice, int quantity) {
@@ -75,7 +68,7 @@ public class Food_Order implements Serializable {
         this.quantity = quantity;
     }
 
-/*    public List<Product> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
@@ -83,9 +76,7 @@ public class Food_Order implements Serializable {
         this.products = products;
     }
 
-    public void setCategory(Category category) {
-        this.category = category;
-    }*/
+
 
     @Override
     public String toString() {

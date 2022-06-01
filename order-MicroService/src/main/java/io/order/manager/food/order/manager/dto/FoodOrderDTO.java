@@ -1,7 +1,6 @@
 package io.order.manager.food.order.manager.dto;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class FoodOrderDTO implements Serializable {
     private int id;

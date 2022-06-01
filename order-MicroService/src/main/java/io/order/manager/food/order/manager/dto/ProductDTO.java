@@ -1,12 +1,12 @@
 package io.order.manager.food.order.manager.dto;
 
-import lombok.Builder;
-
 import java.io.Serializable;
-public class CategoryDTO implements Serializable {
+
+public class ProductDTO implements Serializable {
     private Long id;
-    private String nom;
+    private String name;
     private String description;
+    private Long price;
 
     public Long getId() {
         return id;
@@ -16,12 +16,12 @@ public class CategoryDTO implements Serializable {
         this.id = id;
     }
 
-    public String getNom() {
-        return nom;
+    public String getName() {
+        return name;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {
@@ -30,5 +30,13 @@ public class CategoryDTO implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Long getPrice() {
+        return price;
+    }
+
+    public void setPrice(Long price) {
+        this.price = price;
     }
 }

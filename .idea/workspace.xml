@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb4a912b-8404-4254-9409-9f11901e8062" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/repositories/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/CategoryRessources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/FoodOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/CategoryServicesImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/ProductRessources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/ProductServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.dockerignore" afterDir="false" />
@@ -39,21 +38,15 @@
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/eureka-helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/eureka-helper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/FoodOrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/FoodOrderManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/FoodOrderManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/CategoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/FoodOrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/FoodOrderDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Food_Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Food_Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Offre.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Offre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/FoodOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/FoodOrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/security/JWT/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/security/JWT/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/security/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/security/SpringSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/CategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/FoodOrderServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/CategoryServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/CategoryServicesImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,11 +90,25 @@
       <workItem from="1651915024869" duration="34000" />
       <workItem from="1652975102889" duration="638000" />
       <workItem from="1654025663763" duration="782000" />
-      <workItem from="1654027048235" duration="608000" />
+      <workItem from="1654027048235" duration="1195000" />
+      <workItem from="1654090396876" duration="1210000" />
+      <workItem from="1654100822944" duration="439000" />
+      <workItem from="1654101299292" duration="2716000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
