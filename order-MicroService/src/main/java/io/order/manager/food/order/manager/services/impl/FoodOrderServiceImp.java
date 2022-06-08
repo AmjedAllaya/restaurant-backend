@@ -1,13 +1,17 @@
 package io.order.manager.food.order.manager.services.impl;
 
 import io.order.manager.food.order.manager.dto.FoodOrderDTO;
+import io.order.manager.food.order.manager.dto.ProductDTO;
 import io.order.manager.food.order.manager.entities.Food_Order;
+import io.order.manager.food.order.manager.entities.Product;
 import io.order.manager.food.order.manager.mappers.FoodOrderMapper;
 import io.order.manager.food.order.manager.repositories.FoodOrderRepositories;
+import io.order.manager.food.order.manager.repositories.ProductRepository;
 import io.order.manager.food.order.manager.services.FoodOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -16,6 +20,8 @@ import java.util.stream.Collectors;
 public class FoodOrderServiceImp implements FoodOrderService {
     @Autowired
     private FoodOrderRepositories foodOrderRepositories;
+    @Autowired
+    private ProductRepository productRepository;
     @Autowired
     private FoodOrderMapper foodOrderMapper;
 
@@ -30,6 +36,7 @@ public class FoodOrderServiceImp implements FoodOrderService {
             return "order non supprimé";
         }
     }
+
     @Override
     public List<FoodOrderDTO> getAllOrders() {
         List<Food_Order> allOrders = foodOrderRepositories.findAll();
@@ -42,7 +49,12 @@ public class FoodOrderServiceImp implements FoodOrderService {
     }
 
     @Override
-    public FoodOrderDTO saveOrder(FoodOrderDTO foodOrderDTO) {
+    public FoodOrderDTO saveOrder(FoodOrderDTO foodOrderDTO, int productId) {
+        Product product = productRepository.getById(productId);
+        System.out.println("product: "+ product);
+        List<Product> productList = new ArrayList<>();
+        productList.add(product);
+       foodOrderRepositories.getById(foodOrderDTO.getId()).setProducts(productList);
         Food_Order food_order = foodOrderRepositories.save(foodOrderMapper.convertDtoToEntity(foodOrderDTO));
         return foodOrderMapper.convertEntityToDto(food_order);
     }
@@ -52,18 +64,14 @@ public class FoodOrderServiceImp implements FoodOrderService {
     }*/
 
 
-
     @Override
     public void updateOrder(int id, FoodOrderDTO foodOrderDTO) {
-        if(!Objects.equals(id, foodOrderDTO.getId())){
+        if (!Objects.equals(id, foodOrderDTO.getId())) {
             throw new IllegalArgumentException("IDs don't match");
         }
         Food_Order food_order = foodOrderMapper.convertDtoToEntity(foodOrderDTO);
         foodOrderRepositories.save(food_order);
     }
-
-
-
 
 
 }

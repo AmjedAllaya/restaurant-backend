@@ -2,7 +2,6 @@ package io.order.manager.food.order.manager.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -14,8 +13,9 @@ public class Food_Order implements Serializable {
     private long totalPrice;
     private int quantity;
 
-    @OneToMany(fetch = FetchType.EAGER,mappedBy = "food_order",cascade = CascadeType.ALL)
-    private List<Product> products = new ArrayList<>();
+    /*@OneToMany(fetch = FetchType.LAZY,mappedBy = "food_order",cascade = CascadeType.ALL)*/
+    @OneToMany(mappedBy = "food_order")
+    private List<Product> products;
 
 
 

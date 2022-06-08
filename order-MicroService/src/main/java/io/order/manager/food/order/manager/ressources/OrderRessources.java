@@ -1,6 +1,8 @@
 package io.order.manager.food.order.manager.ressources;
 
 import io.order.manager.food.order.manager.dto.FoodOrderDTO;
+import io.order.manager.food.order.manager.dto.ProductDTO;
+import io.order.manager.food.order.manager.entities.Product;
 import io.order.manager.food.order.manager.services.FoodOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,13 +26,13 @@ public class OrderRessources {
         return foodService.getAllOrders();
     }
 
-    @PostMapping
+    /*@PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     //Ajouter order:
-    public ResponseEntity<FoodOrderDTO> addOrder(@RequestBody FoodOrderDTO order) {
-        return new ResponseEntity<>(foodService.saveOrder(order), HttpStatus.OK);
+    public ResponseEntity<FoodOrderDTO> addOrder(@RequestBody FoodOrderDTO order,int productId) {
+        return new ResponseEntity<>(foodService.saveOrder(order,productId), HttpStatus.OK);
 
-    }
+    }*/
 
     @PutMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)

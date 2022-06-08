@@ -1,6 +1,5 @@
 package io.order.manager.food.order.manager.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -27,9 +26,9 @@ public class Product implements Serializable {
     */
 
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "food_order_id" ,referencedColumnName="id")
-
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    //@ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "idOrder" /*,referencedColumnName="id",insertable=false, updatable=false*/)
     private Food_Order food_order;
 
 

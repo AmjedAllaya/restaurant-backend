@@ -1,6 +1,7 @@
 package io.order.manager.food.order.manager.services.impl;
 
 import io.order.manager.food.order.manager.dto.ProductDTO;
+import io.order.manager.food.order.manager.entities.Category;
 import io.order.manager.food.order.manager.entities.Product;
 import io.order.manager.food.order.manager.mappers.ProductMapper;
 import io.order.manager.food.order.manager.repositories.ProductRepository;
@@ -8,6 +9,7 @@ import io.order.manager.food.order.manager.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;

@@ -1,7 +1,10 @@
 package io.order.manager.food.order.manager.ressources;
 
+
 import io.order.manager.food.order.manager.dto.CategoryDTO;
+import io.order.manager.food.order.manager.entities.Event;
 import io.order.manager.food.order.manager.services.CategoryService;
+import io.order.manager.food.order.manager.services.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -12,36 +15,37 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping(value = "/api/category")
-public class CategoryRessources {
+@RequestMapping(value = "/api/events")
+public class EventRessources {
     @Autowired
-    CategoryService categoryService;
+    EventService eventService;
 
     @GetMapping
-// Affiche Liste des category
-    public List<CategoryDTO> allCategory() {
-        return categoryService.listAll();
+    // Affiche Liste des events
+    public List<Event> allEvents() {
+        return eventService.getAllEvent();
     }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    //Ajouter category:
-    public ResponseEntity<CategoryDTO> addcategory(@RequestBody CategoryDTO categoryDTO) {
-        return new ResponseEntity<>(categoryService.save(categoryDTO), HttpStatus.OK);    }
+    //Ajouter events:
+    public ResponseEntity<Event> addEvent(@RequestBody Event event) {
+        return new ResponseEntity<>(eventService.saveEvent(event), HttpStatus.OK);    }
+
 
     @PutMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
-    // Update category
-    public ResponseEntity<String> updateCategory(@PathVariable(value = "id") Long id, @RequestBody CategoryDTO categoryDTO) {
-        categoryService.update(id, categoryDTO);
+    // Update event
+    public ResponseEntity<String> updateEvent(@PathVariable(value = "id") int id, @RequestBody Event event) {
+        eventService.updateEvent(id, event);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @DeleteMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
     // Delete category
-    public ResponseEntity<String> deletecategory(@PathVariable(value = "id") Long id) {
-        categoryService.delete(id);
+    public ResponseEntity<String> deletecategory(@PathVariable(value = "id") int id) {
+        eventService.deleteEvent(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
 }
