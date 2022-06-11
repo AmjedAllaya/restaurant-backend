@@ -1,0 +1,54 @@
+2022-06-11 17:53:22,549 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-06-11 17:53:22,689 INFO i.o.m.f.o.m.FoodOrderManagerApplication [main] Starting FoodOrderManagerApplication using Java 11.0.15 on lahiir-X541UJ with PID 26857 (/home/lahiir/Documents/Workstation/learning/ESPRIT/microservises/exam project/restaurant-backend/order-MicroService/target/classes started by lahiir in /home/lahiir/Documents/Workstation/learning/ESPRIT/microservises/exam project/restaurant-backend/order-MicroService)
+2022-06-11 17:53:22,697 INFO i.o.m.f.o.m.FoodOrderManagerApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-06-11 17:53:24,850 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-11 17:53:24,911 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+2022-06-11 17:53:25,582 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8547"]
+2022-06-11 17:53:25,582 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2022-06-11 17:53:25,583 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-11 17:53:25,691 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2022-06-11 17:53:26,065 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-11 17:53:26,130 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-11 17:53:26,326 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-11 17:53:26,430 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-11 17:53:26,632 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-11 17:53:26,654 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-11 17:53:27,472 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-11 17:53:27,481 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-11 17:53:29,013 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c5fbde4, org.springframework.security.web.context.SecurityContextPersistenceFilter@27caa186, org.springframework.security.web.header.HeaderWriterFilter@c5e7696, org.springframework.web.filter.CorsFilter@7021bb55, org.springframework.security.web.authentication.logout.LogoutFilter@6c399d4, io.order.manager.food.order.manager.security.JWT.JwtFilter@48928b57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ba015b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58267ba1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6023b54f, org.springframework.security.web.session.SessionManagementFilter@620e0d36, org.springframework.security.web.access.ExceptionTranslationFilter@4e8b36af, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6441cff1]
+2022-06-11 17:53:29,639 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8547"]
+2022-06-11 17:53:29,682 INFO i.o.m.f.o.m.FoodOrderManagerApplication [main] Started FoodOrderManagerApplication in 8.09 seconds (JVM running for 9.671)
+2022-06-11 17:53:29,964 INFO o.a.c.c.C.[.[.[/] [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-11 17:53:29,965 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-06-11 17:53:29,967 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 2 ms
+2022-06-11 17:54:04,359 INFO i.o.m.f.o.m.r.OrderRessources [http-nio-8547-exec-2] executing get food order
+2022-06-11 17:57:10,225 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-11 17:57:10,228 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-06-11 17:57:10,240 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-06-11 17:57:15,153 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-06-11 17:57:15,206 INFO i.o.m.f.o.m.FoodOrderManagerApplication [main] Starting FoodOrderManagerApplication using Java 11.0.15 on lahiir-X541UJ with PID 27269 (/home/lahiir/Documents/Workstation/learning/ESPRIT/microservises/exam project/restaurant-backend/order-MicroService/target/classes started by lahiir in /home/lahiir/Documents/Workstation/learning/ESPRIT/microservises/exam project/restaurant-backend/order-MicroService)
+2022-06-11 17:57:15,214 INFO i.o.m.f.o.m.FoodOrderManagerApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-06-11 17:57:16,417 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-11 17:57:16,515 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+2022-06-11 17:57:17,270 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8547"]
+2022-06-11 17:57:17,270 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2022-06-11 17:57:17,271 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-11 17:57:17,388 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2022-06-11 17:57:18,189 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-11 17:57:18,267 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-06-11 17:57:18,464 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-11 17:57:18,597 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-06-11 17:57:18,764 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-06-11 17:57:18,776 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-11 17:57:19,593 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-11 17:57:19,600 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-11 17:57:21,309 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@449f9628, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c8c42c, org.springframework.security.web.header.HeaderWriterFilter@5cd2adc7, org.springframework.web.filter.CorsFilter@37806ccb, org.springframework.security.web.authentication.logout.LogoutFilter@28ffa527, io.order.manager.food.order.manager.security.JWT.JwtFilter@7a7bd9a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70ca8e72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b8c6406, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@606d2a92, org.springframework.security.web.session.SessionManagementFilter@38991781, org.springframework.security.web.access.ExceptionTranslationFilter@3b38f032, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1851f19f]
+2022-06-11 17:57:21,973 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8547"]
+2022-06-11 17:57:22,002 INFO i.o.m.f.o.m.FoodOrderManagerApplication [main] Started FoodOrderManagerApplication in 8.146 seconds (JVM running for 9.775)
+2022-06-11 17:57:22,535 INFO o.a.c.c.C.[.[.[/] [RMI TCP Connection(4)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-11 17:57:22,535 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(4)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-06-11 17:57:22,537 INFO o.s.w.s.DispatcherServlet [RMI TCP Connection(4)-127.0.0.1] Completed initialization in 1 ms
+2022-06-11 17:58:05,637 INFO i.o.m.f.o.m.r.OrderRessources [http-nio-8547-exec-1] executing get food order
+2022-06-11 18:37:18,646 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-11 18:37:18,652 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-06-11 18:37:18,659 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

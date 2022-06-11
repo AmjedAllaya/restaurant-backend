@@ -4,96 +4,203 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb4a912b-8404-4254-9409-9f11901e8062" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/mappers/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/ressources/ProductRessources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/ProductServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/node-js-jwt-auth-mongodb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/node-js-jwt-auth-mongodb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/config/auth.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/config/auth.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/config/db.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/middlewares/authJwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/middlewares/authJwt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/middlewares/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/middlewares/verifySignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/middlewares/verifySignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/models/role.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/models/role.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/routes/auth.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/app/routes/user.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/eureka-client-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/eureka-client-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/eureka-helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/eureka-helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-jwt-auth-mongodb/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/FoodOrderManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/FoodOrderManagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/CategoryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/FoodOrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/dto/FoodOrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Food_Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Food_Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/CategoryServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-MicroService/src/main/java/io/order/manager/food/order/manager/services/impl/CategoryServicesImp.java" afterDir="false" />
+    <list default="true" id="0469a918-1ae5-4ddf-8ffd-04514c417178" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/TestFoodOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/FoodOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/FoodOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/impl/FoodOrderServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/impl/FoodOrderServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/FoodOrderManagerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/FoodOrderManagerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="284hIw9s05x7kJ6Ox6LHUhVVXQ5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="283mLyeJTpliURcF2yQab2i1QL4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/repositories" />
+      <recent name="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/impl" />
+      <recent name="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/ressources" />
+      <recent name="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.order.manager.food.order.manager.services.impl" />
+      <recent name="io.order.manager.food.order.manager.services" />
+      <recent name="io.order.manager.food.order.manager.repositories" />
+      <recent name="io.order.manager.food.order.manager.entities" />
+      <recent name="io.order.manager.food.order.manager.ressources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FoodOrderManagerApplication">
+    <configuration name="TestFoodOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order-MicroService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.order.manager.food.order.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.order.manager.food.order.manager" />
+      <option name="MAIN_CLASS_NAME" value="io.order.manager.food.order.manager.TestFoodOrder" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFoodOrder.testFoodOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order-MicroService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.order.manager.food.order.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.order.manager.food.order.manager" />
+      <option name="MAIN_CLASS_NAME" value="io.order.manager.food.order.manager.TestFoodOrder" />
+      <option name="METHOD_NAME" value="testFoodOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoodOrderManagerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order-MicroService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.order.manager.food.order.manager.FoodOrderManagerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoodOrderManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order-MicroService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.order.manager.food.order.manager.FoodOrderManagerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestFoodOrder.testFoodOrder" />
+        <item itemvalue="JUnit.TestFoodOrder" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eb4a912b-8404-4254-9409-9f11901e8062" name="Changes" comment="" />
-      <created>1650481690490</created>
+      <changelist id="0469a918-1ae5-4ddf-8ffd-04514c417178" name="Changes" comment="" />
+      <created>1650453594037</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650481690490</updated>
-      <workItem from="1650481692448" duration="79000" />
-      <workItem from="1650666885016" duration="3000" />
-      <workItem from="1650666907549" duration="136000" />
-      <workItem from="1651915024869" duration="34000" />
-      <workItem from="1652975102889" duration="638000" />
-      <workItem from="1654025663763" duration="782000" />
-      <workItem from="1654027048235" duration="1195000" />
-      <workItem from="1654090396876" duration="1210000" />
-      <workItem from="1654100822944" duration="439000" />
-      <workItem from="1654101299292" duration="2716000" />
+      <updated>1650453594037</updated>
+      <workItem from="1650453595292" duration="903000" />
+      <workItem from="1650464598992" duration="3120000" />
+      <workItem from="1650556472009" duration="8609000" />
+      <workItem from="1650604012115" duration="2940000" />
+      <workItem from="1650644897272" duration="13813000" />
+      <workItem from="1650667326281" duration="2302000" />
+      <workItem from="1650670267833" duration="897000" />
+      <workItem from="1650674347770" duration="10864000" />
+      <workItem from="1650700742322" duration="322000" />
+      <workItem from="1650703137785" duration="1158000" />
+      <workItem from="1653251365736" duration="1720000" />
+      <workItem from="1653253266233" duration="4048000" />
+      <workItem from="1653485133063" duration="7862000" />
+      <workItem from="1653495112052" duration="4084000" />
+      <workItem from="1653509245675" duration="1495000" />
+      <workItem from="1653594599147" duration="2493000" />
+      <workItem from="1653679211006" duration="1594000" />
+      <workItem from="1653745497339" duration="4549000" />
+      <workItem from="1653816931936" duration="13949000" />
+      <workItem from="1653965005073" duration="3034000" />
+      <workItem from="1654024885347" duration="2114000" />
+      <workItem from="1654027054582" duration="3105000" />
+      <workItem from="1654100862000" duration="401000" />
+      <workItem from="1654101297005" duration="9891000" />
+      <workItem from="1654112536458" duration="2830000" />
+      <workItem from="1654197349953" duration="7892000" />
+      <workItem from="1654691454598" duration="3582000" />
+      <workItem from="1654695119089" duration="462000" />
+      <workItem from="1654955197930" duration="9058000" />
+      <workItem from="1654983116712" duration="1412000" />
     </task>
     <servers />
   </component>
@@ -110,5 +217,33 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/TestFoodOrder.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/TestFoodOrder.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/TestFoodOrder.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.web.firewall.FirewalledResponse" memberName="response" />
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+        <PinnedItemInfo parentTag="java.lang.String" memberName="coder" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
