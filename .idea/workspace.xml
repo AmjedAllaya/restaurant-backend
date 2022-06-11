@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0469a918-1ae5-4ddf-8ffd-04514c417178" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/TestFoodOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/ressources/OrderRessources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/FoodOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/FoodOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/impl/FoodOrderServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/order/manager/food/order/manager/services/impl/FoodOrderServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/FoodOrderManagerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/order/manager/food/order/manager/FoodOrderManagerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -200,7 +195,7 @@
       <workItem from="1654691454598" duration="3582000" />
       <workItem from="1654695119089" duration="462000" />
       <workItem from="1654955197930" duration="9058000" />
-      <workItem from="1654983116712" duration="1412000" />
+      <workItem from="1654983116712" duration="2811000" />
     </task>
     <servers />
   </component>
